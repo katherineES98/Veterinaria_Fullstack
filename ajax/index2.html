@@ -1,0 +1,156 @@
+<!--vamos a copiar todo lo que tenemos en el primero 
+aca de entrada vamos hacer lo soguiente no argar ejemplos.fetch si no que solo nos cargue un usuariio que estamos necesitamos 
+crearemos un js dque se llame cargarusuario.js y eso seria un getigual el de refrescar pero con el id y en este index vamos
+a cargar lo de cargarusuario-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirmera app usando ajax</title>
+      <!--
+    <style>
+         table, th, td{
+             border: 1px solid black;
+         }
+    </style>
+    -->
+
+<style>
+
+    *{
+        box-sizing: border-box;
+     }
+    
+    
+        input[type=text],
+        select,
+        textarea{ 
+         width: 100%;
+         padding:12px;
+         margin: 8px 0px;
+         border:1px solid #ccc;
+         border-radius: 4px;
+         resize: vertical;
+         background-color: white;
+     
+       
+     }
+     label{ 
+         padding: 12px 12px 12px 0;
+         display: block;
+      }
+    
+    input:focus,
+    select:focus
+    {
+       background-color: lightblue;
+        border: 1px solid #666666;
+        
+    }
+    .container{
+        border-radius: 2px;
+        background-color: #f5f3f3;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+    }
+    select{
+       
+        height: 40px;
+        margin-bottom: 8px;
+        
+    }
+    ::placeholder{
+        color: rgb(94, 90, 99);
+    }
+    
+    button{
+        background-color: rgb(92, 155, 30);
+        border: none;
+        color: white;
+        padding: 12px 32px;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 10px 2px;
+    }
+        
+        button:hover{
+            background-color: #45a049;
+        }
+    
+    h1{
+       color: white;
+      
+    }
+    body{
+        background-color: rgb(159, 237, 243);
+    }
+   
+    button.eliminar{
+        background-color: rgb(218, 34, 34);
+    }
+    button.editar{
+        background-color: rgb(78, 64, 199);
+    }
+    button[type= reset]{
+        background-color:white ;
+        border: 1px solid black;
+        color: black;
+    }
+  
+    table, th, td{
+             background-color: blanchedalmond;
+    }
+    
+    .campo-usuario{
+        font-weight: bolder;
+        width: 100px;
+    }
+    
+    </style>
+
+
+</head>
+<body>
+    <!--
+ este es la tabla para lo del fetch
+    
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre">
+<button id="boton">Enviar datos usuarios</button>
+<table >
+      <thead>
+          <th>Nombre</th>
+      </thead>
+      <tbody id="body-usuario">
+     
+      </tbody>
+       
+</table>
+<script src="ejemplo-ajax.js"></script>
+-->
+
+<center>
+    <h1>Formulario estilizado con css</h1>
+  </center>
+    
+
+<table >
+    <div class="conatiner">
+    <thead>
+        
+    </thead>
+    <tbody id="body-usuario">
+   
+    </tbody>
+     
+</table>
+</div>
+
+
+<script src="cargar-usuario.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.action-menu{
+    padding:40px 30px ;
+}
+
+.form-row{
+    padding: 20px 0px;
+}
+.Titulo1{
+margin-bottom: 20px;    
+}
+.actions-menu-content{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.actions-menu-content > button.btn.btn-primary{
+    height: 40px;
+}
+
+.alert{
+    display: none;
+}

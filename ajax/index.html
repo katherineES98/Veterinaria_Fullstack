@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirmera app usando ajax</title>
+      <!--
+    <style>
+         table, th, td{
+             border: 1px solid black;
+         }
+    </style>
+    -->
+
+<style>
+
+    *{
+        box-sizing: border-box;
+     }
+    
+    
+        input[type=text],
+        select,
+        textarea{ 
+         width: 100%;
+         padding:12px;
+         margin: 8px 0px;
+         border:1px solid #ccc;
+         border-radius: 4px;
+         resize: vertical;
+         background-color: white;
+     
+       
+     }
+     label{ 
+         padding: 12px 12px 12px 0;
+         display: block;
+      }
+    
+    input:focus,
+    select:focus
+    {
+       background-color: lightblue;
+        border: 1px solid #666666;
+        
+    }
+    .container{
+        border-radius: 2px;
+        background-color: #f5f3f3;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+    }
+    select{
+       
+        height: 40px;
+        margin-bottom: 8px;
+        
+    }
+    ::placeholder{
+        color: rgb(94, 90, 99);
+    }
+    
+    button{
+        background-color: rgb(92, 155, 30);
+        border: none;
+        color: white;
+        padding: 12px 32px;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 10px 2px;
+    }
+        
+        button:hover{
+            background-color: #45a049;
+        }
+    
+    h1{
+       color: white;
+      
+    }
+    body{
+        background-color: rgb(159, 237, 243);
+    }
+   
+    button.eliminar{
+        background-color: rgb(218, 34, 34);
+    }
+    button.editar{
+        background-color: rgb(78, 64, 199);
+    }
+    a.ver{
+        background-color: rgb(247, 135, 30);
+    }
+    button[type= reset]{
+        background-color:white ;
+        border: 1px solid black;
+        color: black;
+    }
+    </style>
+
+
+</head>
+<body>
+    <!--
+ este es la tabla para lo del fetch
+    
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre">
+<button id="boton">Enviar datos usuarios</button>
+<table >
+      <thead>
+          <th>Nombre</th>
+      </thead>
+      <tbody id="body-usuario">
+     
+      </tbody>
+       
+</table>
+<script src="ejemplo-ajax.js"></script>
+-->
+
+<center>
+    <h1>Formulario estilizado con css</h1>
+  </center>
+    
+  <form >
+      <input type="hidden" name="indice" id="indice">
+    <div class="container">
+    <label for="nombre">Nombre</label>
+    <input class="input-txt"type="text" name="nombre" id="nombre" placeholder="pon tu nombre aqui">
+    <label for="apellido">Apellido</label>
+    <input class="input-txt" type="text" id="apellido" placeholder="pon tu apelliido aqui">
+    <label for="Pais">Pais</label>
+    <select name="pais" id="pais">
+         <!-- 
+             -disabled selected (es para desahabilitar la opcion seleccione cuando 
+             esta esta por default
+             -disable selected hiden que cuando seleccionamos una opcion la opcion de seleccion se desaparece
+             )
+         -->
+     
+        <option disabled selected hidden >Seleccione</option>
+        <option >Mexico</option>
+        <option >Peru</option>
+        <option >Colombia</option>
+      
+    </select>
+    <button type="submit" id="boton">Crear</button>
+    <button type="reset" id="limpiar">limpiar</button>
+
+</form>
+<table >
+    <thead>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Pais</th> 
+        <!--esta columna la vamos agregar en el reder en la funcion y esa columna tendra un boton  -->
+        <th>Acciones</th>   
+    </thead>
+    <tbody id="body-usuario">
+   
+    </tbody>
+     
+</table>
+
+
+
+<script src="ejemplo-fetch.js"></script>
+</body>
+</html>
