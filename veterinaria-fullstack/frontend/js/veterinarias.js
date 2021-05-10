@@ -11,7 +11,7 @@ const btnGuardar = document.getElementById("btn-guardar");
 const indice = document.getElementById("indice");
 //este form le vamos a decir que no haga lo nomrla que hace navegar los elemnto cuando le damos enter a un formulario osea en un input de texto en el formulario
 const form = document.getElementById("form");
-const url= "http://localhost:5000/veterinarias";
+const url= "https://veterinaria-backend-theta-one.vercel.app/veterinarias";
 let veterinarias = [];
 
 async function listarVeterinarias() {

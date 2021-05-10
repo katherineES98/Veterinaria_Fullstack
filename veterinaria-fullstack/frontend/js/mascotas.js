@@ -11,7 +11,7 @@ const indice = document.getElementById("indice");
 //este form le vamos a decir que no haga lo nomrla que hace navegar los elemnto cuando le damos enter a un formulario osea en un input de texto en el formulario
 
 const form = document.getElementById("form");
-const url = "http://localhost:5000/mascotas";
+const url = "https://veterinaria-backend-theta-one.vercel.app/mascotas";
 let mascotas = [];
 
 async function listarMascota() {
@@ -244,7 +244,7 @@ listarMascota();
 /*
 //enves de esta funcion lo meteremos en listar mascotas porque no esta haciendobien el recorrido 
 function solicitarMascotas() {
-    fetch("http://localhost:5000/mascotas").then((respuesta)=>{
+    fetch("https://veterinaria-backend-theta-one.vercel.app/mascotas").then((respuesta)=>{
     if (respuesta.ok) {
         return respuesta.json();
     }

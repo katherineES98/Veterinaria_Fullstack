@@ -9,7 +9,7 @@ const formulario = document.getElementById("formulario");
 let consultas = [];
 let mascotas = [];
 let veterinarias = [];
-const url = "http://localhost:5000";
+const url = "https://veterinaria-backend-theta-one.vercel.app";
 
 console.log({ mascota, veterinaria, historia, diagnostico });
 
