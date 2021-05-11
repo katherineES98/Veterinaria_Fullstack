@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    .bg-Azul{
+        background-color: blue;
+    }
+    .letra-blanca{
+     color: #fff;
+ }
+</style>
+
+    <div id="app">
+
+    </div>
+    <!--manipulando htl en js para eso es este script de abajo -->
+ <!--
+   <script>
+       /*
+        const app = document.getElementById('app');
+     const div= document.createElement('div');
+     div.innerText = 'hola soy un div';
+ app.appendChild(div);
+ div.style.color='blue';
+       // document.body.appendChild(div);*/
+      
+       //boton 
+       const app = document.getElementById('app');
+     const button= document.createElement('button');
+     button.innerText = 'hola soy un div';
+     button.className ='bg-Azul letra-blanca';
+ 
+ app.appendChild(button);
+ //div.style.color='blue';
+
+    button.onclick=() => alert('click en el boton ');
+    </script>
+    -->  
+
+    <!---Primero paso con react-->
+    <div id="app">
+
+</div>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script type= "text/babel">
+        const app= document.getElementById('app');
+
+       // const button = React.createElement('button', {className : 'bg-Azul  letra-blanca', onClick:()=>{alert('hola desde react')}}, 'botn de react')
+            /*esta es mas entendible que la primera que hc=icims osea que esta ----> const button = React.createElement('button', {className : 'bg-Azul  letra-blanca', onClick:()=>{alert('hola desde react')}}, 'botn de react')
+            que esa que esta alli es mas compleja que esta que escribimos abajo es mas entedible l mezclar html y JS juntos
+            */
+        const Button = ()=>(<button className ='bg-Azul  letra-blanca' onClick={()=>{alert('hola desde react')}}>boton de react</button>)
+       // const divPrincipal = React.createElement('div',{},button);
+       /* esta sera mas facil ponerla que la acterior div principal este sera de este manera y abas la anterior y este se pone como una fncion porque estamos usando react no es por babel.js*/
+     /*div principa es encapsularme para mostrarle que puede desde react tener  hijo que son elementos de html */
+       const DivPrincipal = ()=>(<div><Button/></div>)
+       ReactDOM.render(<DivPrincipal/>, app)
+    </script>
+</body>
+</html>
