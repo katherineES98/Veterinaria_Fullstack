@@ -1,0 +1,30 @@
+.btn{
+    display: inline-block !important;
+    font-weight: 400 !important;
+    color: #212529 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    cursor: pointer !important;
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    padding: .375rem .75 !important;
+    font-size: 1rem!important;
+    line-height: 1.5 !important;
+    border-radius: 0.25rem !important;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s box-shadow .15s ease-in-out !important;
+}
+
+.btn-info{
+    color: #fff !important;
+    background-color: #17a2b8 !important;
+    border-color:#17a2b8 !important;
+
+}
+
+.btn-danger{
+    color: #fff !important;
+    background-color: #dc3545 !important;
+    border-color:#dc3545  !important;
+
+}
+

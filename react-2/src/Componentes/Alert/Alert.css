@@ -1,0 +1,39 @@
+.alert{
+    position: relative !important;
+    padding: .75rem 1.25rem !important;
+    margin-bottom: 1rem !important;
+    border: 1px solid transparent !important;
+    border-radius: .25rem;
+
+}
+
+.alert-danger{
+    color: #721c24 !important;
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb  !important;
+
+
+}
+
+.alert-dismissible{
+padding-right: 4rem !important;
+}
+
+.alert-dismissible .close{
+    position: absolute!important;
+    top: 0 !important;
+    right: 0!important;
+    color: inherit!important ;
+    
+    background-color: transparent !important;
+    border: none !important;
+}
+.close{
+    float: right ;
+    font-size: 1.5rem ;
+    font-weight: 700 ;
+    line-height: 1 ;
+    color: #000 ;
+    text-shadow: 0 1px 0 #fff ;
+    opacity: .5 ;
+}

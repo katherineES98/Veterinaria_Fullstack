@@ -1,9 +1,16 @@
-import logo from './logo.svg';
+import React from "react";
+
 import './App.css';
+import Pagina from "./Pagina";
 
 function App() {
   return (
-    <div className="App">
+    <Pagina/>
+    /**
+     * quito todo este codigo y pondre Mascota porque lo vamos a importar como si fuera 
+     * una etiqueta html pero recordemos que es un compnente de read y como es ese solo vamos a poner
+     * return <Mascotas/> 
+     *  <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,6 +26,8 @@ function App() {
         </a>
       </header>
     </div>
+     */
+   
   );
 }
 
